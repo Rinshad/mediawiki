@@ -24,7 +24,8 @@ serviceAccount:
   name: ""
 
 podAnnotations: {}
-
+updateStrategy:
+  type: RollingUpdate
 podSecurityContext: {}
   # fsGroup: 2000
 
