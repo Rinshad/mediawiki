@@ -1,0 +1,23 @@
+replicaCount: 1
+
+image:
+  repository: mariadb
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+MYSQL_ROOT_PASSWORD: Mari@dbR00tpW
+MYSQL_PASSWORD: mYP@$$Wd
+MYSQL_DATABASE: mediawikidb
+MYSQL_USER: dbuser
+
+service:
+  type: ClusterIP
+  port: 3306
+  targetport: 3306
+
+serviceAccount:
+  create: false
+  annotations: {}
+  name: ""
+
+resources: {}
