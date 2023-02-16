@@ -19,4 +19,4 @@ helm install medaiwiki ./mediawiki-chart -n app-namespace
 helm install mariadb ./mariadb-chart -n app-namespace
 ```
 
-The application will start listinging on the port 80 after the deployment. Use the loadblancer public IP address to access the application from a browser. To setup the application database use the database details provided in the chart. Last download the LocalSettings.php file and it can be placed inside the apache document root (/var/www/html) with the help of configmap mount.
+The application will start listinging on the port 80 after the deployment. Use the loadblancer public IP address to access the application from a browser. To setup the application database use the database details provided in the "maridadb" chart values.yaml file. Last download the LocalSettings.php file and it can be placed inside the apache document root (/var/www/html) with the help of configmap mount.
