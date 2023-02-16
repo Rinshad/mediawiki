@@ -7,7 +7,7 @@ Mediawiki docker file and helm chart
 2. Helm 
 3. kubectl
 
-Tools version which I used \ 
+# Tools version which I used  
 kubernetes v1.24.9 \
 helm v3.8.0 \
 docker 20.10.12 
